@@ -3,13 +3,13 @@
 f = open("lorem.txt", "r")
 a = f.read()
 # print all strings in file
-# print(a)
+print(a)
 # convert to lowercase
-# print(a.lower())
+print(a.lower())
 # convert to uppercase
-# print(a.upper())
-# find a string
+print(a.upper())
+
 # print all sentences
-# print(a.split("."))
+print(a.split("."))
 # print all letter
-print(a.split(""))
+

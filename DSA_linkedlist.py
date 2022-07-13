@@ -1,48 +1,76 @@
-# Creating A linked List
+# linked List
 
 # Create Node Class
 class node:
-    def __init__(self, data=None):
-        self.data = data
-        self.next = None
+  def __init__(self,data=None):
+    self.data=data
+    self.next=None
 
-
-# Create Linkedlist class
 class linked_list:
-    def __init__(self):
-        self.head = node()
+  def __init__(self):
+    self.head=node()
 
-    # function to add to list
+  # Adds new node containing 'data' to the end of the linked list.
+  def append(self,data):
+    new_node=node(data)
+    cur=self.head
+    while cur.next!=None:
+      cur=cur.next
+    cur.next=new_node
 
-    def append(self, data):
-        new_node = node(data)
-        current_node = self.head
-        while current_node.next is not None:
-            current_node = current_node.next
-            current_node.next = new_node
+  # Returns the length (integer) of the linked list.
+  def length(self):
+    cur=self.head
+    total=0
+    while cur.next!=None:
+      total+=1
+      cur=cur.next
+    return total
 
-        # function show the length of the list
+  # Prints out the linked list in traditional Python list format.
+  def display(self):
+    elems=[]
+    cur_node=self.head
+    while cur_node.next!=None:
+      cur_node=cur_node.next
+      elems.append(cur_node.data)
+    print(elems)
 
-    def length(self):
-        current_node = self.head
-        total = 0
-        while current_node.next is not None:
-            total += 1
-            current_node = current_node.next
-        return total
+  # Returns the value of the node at 'index'.
+  def get(self,index):
+    if index>=self.length() or index<0: # added 'index<0' post-video
+      print ("ERROR: 'Get' Index out of range!")
+      return None
+    cur_idx=0
+    cur_node=self.head
+    while True:
+      cur_node=cur_node.next
+      if cur_idx==index: return cur_node.data
+      cur_idx+=1
 
-        # function to display all elements
+  # Deletes the node at index 'index'.
+  def erase(self,index):
+    if index>=self.length() or index<0: # added 'index<0' post-video
+      print ("ERROR: 'Erase' Index out of range!")
+      return
+    cur_idx=0
+    cur_node=self.head
+    while True:
+      last_node=cur_node
+      cur_node=cur_node.next
+      if cur_idx==index:
+        last_node.next=cur_node.next
+        return
+      cur_idx+=1
 
-    def display(self):
-        elements = []
-        current_node = self.head
-        while current_node.next is not None:
-            current_node = current_node.next
-            elements.append(current_node.data)
-        print(elements)
+  # Allows for bracket operator syntax (i.e. a[0] to return first item).
+  def __getitem__(self,index):
+    return self.get(index)
+
+
 
 
 my_list = linked_list()
-my_list.display()
+
 my_list.append(11)
 my_list.display()
