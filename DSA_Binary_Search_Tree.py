@@ -96,7 +96,7 @@ class binary_search_tree:
         current=current.left_child
       return current
 
-# vreated returns the number of children for the specified node function
+# created returns the number of children for the specified node function
     def num_children(n):
       num_children=0
       if n.left_child!=None: num_children+=1
