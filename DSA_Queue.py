@@ -1,9 +1,9 @@
 # Create a Queue
 
 # import Queue
-import Queue
+import queue
 
-test = Queue.Queue()
+test = queue.Queue()
 
 # insert value into queue
 test.put(1)

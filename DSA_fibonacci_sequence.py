@@ -1,4 +1,4 @@
-# prints out the first n fibonacci numbers
+# prints out the first n fibonacci numbers using for loop
 def fibonacci(n):
     last_fibs = [1, 1]
     for i in range(n):
@@ -10,5 +10,4 @@ def fibonacci(n):
             print(new_fib)
 
 
-# Fibonacci sequence when n is 100
-fibonacci(100)
+fibonacci(5)

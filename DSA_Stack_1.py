@@ -1,4 +1,4 @@
-# Stack Implementetion using List
+# Stack Implementation using List
 Stack = []
 
 
