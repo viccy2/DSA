@@ -83,27 +83,43 @@ class Linked_list:
         else:
             self.head = self.head.next
 
+    # deleting node from the end
     def delete_end(self):
         if self.head is None:
             print('node is empty')
         else:
-            while self.head.next is not None:
-                self.head = self.head.next
-                return
-            self.head.next = self.head
-            if self.head.next is None:
-                print('node not found')
-            else:
-                print('a')
+            head_node = self.head
+            while head_node.next.next is not None:
+                head_node = head_node.next
+            head_node.next = None
+
+    # deleting node from any point in the linked list
+    def delete_between(self, x):
+        if self.head is None:
+            print('Linked list is empty')
+            return
+        if x == self.head.data:
+            self.head = self.head.next
+            return
+        head_node = self.head
+        while head_node.next is not None:
+            if x == head_node.next.data:
+                break
+            head_node = head_node.next
+        if head_node.next is None:
+            print('Node not found')
+        else:
+            head_node.next = head_node.next.next
 
 
 L_list = Linked_list()
 L_list.add_front(10)
 L_list.add_front(20)
-# L_list.add_front(30)
+L_list.add_front(30)
+L_list.delete_between(10)
 # L_list.add_end(40)
 # L_list.add_between_after(4, 40)
 # L_list.add_between_before(4, 40)
 # L_list.delete_front()
-L_list.delete_end()
+# L_list.delete_end()
 L_list.display_linked_list()
