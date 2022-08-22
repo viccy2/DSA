@@ -115,6 +115,7 @@ class doubly_linked_list:
             print('list is empty')
         else:
             self.head = self.head.next
+            self.head.pref = None
 
     # removing node from tail
     def remove_tail(self):
@@ -122,19 +123,50 @@ class doubly_linked_list:
             print('list is empty')
         else:
             head_node = self.head
-            while head_node.next.next is not None:
+            while head_node.next is not None:
                 head_node = head_node.next
-            head_node.next = None
+            head_node.pref.next = None
+
+    # removing from any position based on x value
+    def remove_from_x_position(self, x):
+        if self.head is None:
+            print('list is empty')
+            return
+        if self.head.next is None:
+            if self.head.data == x:
+                self.head = None
+            return
+        if self.head.data == x:
+            self.head = self.head.next
+            self.head.pref = None
+            return
+        head_node = self.head
+        while head_node.next is not None:
+            if x == head_node.data:
+                break
+            head_node = head_node.next
+        if head_node.next is not None:
+            head_node.pref.next = head_node.next
+            head_node.next.pref = head_node.pref
+        else:
+            if head_node.data == x:
+                head_node.pref.next = None
+            else:
+                print('node not found')
 
 
 D = doubly_linked_list()
 D.add_node(1)
 D.add_from_tail(2)
-D.add_from_head(5)
-D.add_from_after(0, 1)
-D.add_from_before(0, 1)
-D.remove_head()
-D.remove_tail()
+# D.add_from_head(5)
+# D.add_from_after(0, 1)
+# D.add_from_before(0, 1)
+# D.remove_head()
+# D.remove_head()
+D.remove_from_x_position(2)
+D.remove_from_x_position(1)
+# D.remove_tail()
+# D.remove_tail()
 # D.display_from_tail()
 print()
 D.display_from_head()
