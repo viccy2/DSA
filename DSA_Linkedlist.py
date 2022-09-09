@@ -15,7 +15,7 @@ class linked_list:
     def append(self, data):
         new_node = node(data)
         cur = self.head
-        while cur.next != None:
+        while cur.next is not None:
             cur = cur.next
         cur.next = new_node
 
@@ -23,7 +23,7 @@ class linked_list:
     def length(self):
         cur = self.head
         total = 0
-        while cur.next != None:
+        while cur.next is not None:
             total += 1
             cur = cur.next
         return total
@@ -32,7 +32,7 @@ class linked_list:
     def display(self):
         elems = []
         cur_node = self.head
-        while cur_node.next != None:
+        while cur_node.next is not None:
             cur_node = cur_node.next
             elems.append(cur_node.data)
         print(elems)
@@ -46,7 +46,8 @@ class linked_list:
         cur_node = self.head
         while True:
             cur_node = cur_node.next
-            if cur_idx == index: return cur_node.data
+            if cur_idx == index:
+                return cur_node.data
             cur_idx += 1
 
     # Deletes the node at index 'index'.
