@@ -71,6 +71,33 @@ def add_edge_directed_w(vertices1, vertices2, cost):
         graph[idx1][idx2] = cost
 
 
+# delete node in graph
+def delete_node(vertices):
+    global count_node
+    if vertices not in nodes:
+        print('node not in graph')
+    else:
+        count_node = count_node - 1
+        idx1 = nodes.index(vertices)
+        nodes.remove(vertices)
+        graph.pop(idx1)
+        for i in graph:
+            i.pop(idx1)
+
+
+# remove edge from node for undirected unweighted graph
+def delete_edge(vertices1, vertices2):
+    if vertices1 not in nodes:
+        print(vertices1, 'is not in graph')
+    if vertices2 not in nodes:
+        print(vertices2, 'is not in graph')
+    else:
+        idx1 = nodes.index(vertices1)
+        idx2 = nodes.index(vertices2)
+        graph[idx1][idx2] = 0
+        graph[idx2][idx1] = 0
+
+
 # print adjacency matrix
 def print_graph():
     for i in range(count_node):
@@ -85,8 +112,8 @@ add_node('B')
 add_node('C')
 add_edge_undirected('A', 'B')
 add_edge_undirected_w('A', 'C', 12)
-add_edge_directed('B', 'C')
-add_edge_directed_w('C', 'B', 5)
+delete_edge('A', 'C')
+delete_edge('A', 'B')
 print(nodes)
 print(graph)
 print_graph()
