@@ -2,30 +2,36 @@
 Stack = []
 
 
-def push_to_stack(data):
+def add(data):
     Stack.append(data)
 
 
-def pop_from_stack():
+def remove(data):
     Stack.pop()
 
 
-def display_stack():
+def display():
     for i in Stack:
         print(i, end="")
 
 
-def reverse_stack():
-    elem = " "
+def reverse():
+    data = ""
     while Stack:
-        elem += Stack.pop()
-    print(elem)
+        data += Stack.pop()
+    print(end=" ")
+    print(data)
 
 
-push_to_stack('H')
-push_to_stack('E')
-push_to_stack('L')
-push_to_stack('L')
-push_to_stack('O')
-display_stack()
-reverse_stack()
+def reverse_string(data):
+    print(data[::-1])
+
+
+Stack.append("H")
+Stack.append("E")
+Stack.append("L")
+Stack.append("L")
+Stack.append("O")
+display()
+reverse()
+reverse_string("app")

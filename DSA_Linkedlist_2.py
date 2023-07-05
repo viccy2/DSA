@@ -6,7 +6,7 @@ class Node:
         self.next = None
 
 
-# creating linked list
+# creating linked li
 class Linked_list:
     def __init__(self):
         self.head = None
