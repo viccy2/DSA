@@ -1,4 +1,4 @@
-# implementing complete binary tree using recursion
+# complete binary tree using recursion
 class CompleteBT:
     def __init__(self, key):
         self.key = key
