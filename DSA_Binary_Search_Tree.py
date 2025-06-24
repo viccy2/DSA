@@ -1,4 +1,4 @@
-# Implementing Binary Search Tree
+# Binary Search Tree
 class BST:
     def __init__(self, key):
         self.key = key
