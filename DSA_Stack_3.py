@@ -1,4 +1,4 @@
-# Implementing Stack using modules (Queues)
+# Stack using modules (Queues)
 import queue
 
 Stack = queue.LifoQueue()
