@@ -1,4 +1,4 @@
-# Reverse string in Stack
+# Reverse string in Stack.
 Stack = []
 
 
