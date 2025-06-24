@@ -1,4 +1,4 @@
-# Queue implementation using List
+# Queue implementation using List.
 Queue = []
 
 
