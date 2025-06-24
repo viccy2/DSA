@@ -1,4 +1,4 @@
-# implementing Fibonacci sequence using while loop
+# Fibonacci sequence using while loop
 def fibonacci(n):
     val1 = 1
     val2 = 1
