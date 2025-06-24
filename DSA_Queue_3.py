@@ -1,4 +1,4 @@
-# Implementing Queue using modules (Queues)
+# Queue using modules (Queues)
 import queue
 
 Queues = queue.Queue()
