@@ -1,4 +1,4 @@
-# Implementing Queue using modules
+#Queue using modules
 import collections
 
 Queues = collections.deque()
