@@ -1,4 +1,4 @@
-# singly linked implementation list using linked list
+# singly linked list using linked list
 # creating node
 class Node:
     def __init__(self, data):
