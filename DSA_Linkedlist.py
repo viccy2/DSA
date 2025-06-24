@@ -1,4 +1,4 @@
-# linked List
+# linked List.
 
 # Create Node Class
 class node:
