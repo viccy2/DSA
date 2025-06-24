@@ -1,4 +1,4 @@
-# implementing graph using adjacency list
+# implemented graph using adjacency list
 graph = {}
 
 
