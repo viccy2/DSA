@@ -1,4 +1,4 @@
-# Implementing Stack using modules
+# Stack using modules
 import collections
 
 Stack = collections.deque()
