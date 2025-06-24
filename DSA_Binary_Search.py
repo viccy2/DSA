@@ -1,4 +1,4 @@
-# implementing binary search
+# binary search
 def binary_search(a, value):
     if len(a) == 0 or (len(a) == 1 and a[0] != value):
         return False
