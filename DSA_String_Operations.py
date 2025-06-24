@@ -1,5 +1,5 @@
 # string objects
-# function open file, read file
+# function open file, read file.
 f = open("lorem.txt", "r")
 a = f.read()
 # print all strings in file
