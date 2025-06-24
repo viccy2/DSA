@@ -1,4 +1,4 @@
-# PriorityQueue Implementation using List
+# PriorityQueue using List
 List = []
 
 
