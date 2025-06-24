@@ -1,4 +1,4 @@
-# prints out the first n fibonacci numbers using for loop
+# prints out the first n fibonacci numbers using for loop.
 def fibonacci(n):
     last_fibs = [1, 1]
     for i in range(n):
