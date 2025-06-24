@@ -1,4 +1,4 @@
-# implementing Binary Heap
+# implemented Binary Heap
 
 import heapq
 
