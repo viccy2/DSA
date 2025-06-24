@@ -1,4 +1,4 @@
-# Stack Implementetion using List
+# Implementetion using List
 Queue = []
 
 
