@@ -1,4 +1,4 @@
-# implementing Graph using Adjacency Matrix
+# Graph using Adjacency Matrix
 
 nodes = []
 graph = []
