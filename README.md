@@ -1,29 +1,21 @@
-# Data Structures & Algorithms (DSA) Practice
-
-Overview
-
-A collection of Data Structures and Algorithms (DSA) implementations to improve problem-solving skills and algorithmic efficiency.
-
+Data Structures & Algorithms (DSA) Practice
+<b>Overview</b>
+A collection of Data Structures and Algorithms (DSA) implementations to improve <b>problem-solving skills</b> and <b>algorithmic efficiency</b>. This repository serves as a personal reference and a study guide for technical interviews.
 Features
-
-Implementation of common DSA concepts
-Optimized solutions with time & space complexity analysis
-Code examples in JavaScript, Python, and Java
-Real-world problem-solving scenarios
+• <b>Core Concepts:</b> Implementation of foundational DSA structures.
+• <b>Optimized:</b> Solutions include <b>time and space complexity</b> analysis (\bm{O(n)}, \bm{O(\log n)}, etc.).
+• <b>Multi-Language Support:</b> Code examples provided in <b>JavaScript, Python, and Java</b>.
+• <b>Practicality:</b> Real-world problem-solving scenarios and logic.
 Tech Stack
-
-Languages: Python
-
-
+• <b>Primary Language:</b> Python
+• <b>Supporting Languages:</b> JavaScript, Java
 Topics Covered
-
-Arrays & Strings
-Linked Lists
-Stacks & Queues
-Trees & Graphs
-Sorting & Searching
-Dynamic Programming
-
+• <b>Arrays & Strings:</b> Manipulation, sliding window, and two-pointer techniques.
+• <b>Linked Lists:</b> Singly, doubly, and circular implementations.
+• <b>Stacks & Queues:</b> LIFO and FIFO logic.
+• <b>Trees & Graphs:</b> Traversal (BFS/DFS) and shortest path algorithms.
+• <b>Sorting & Searching:</b> Binary search, QuickSort, MergeSort, etc.
+• <b>Dynamic Programming:</b> Optimization problems and memoization.
 Future Improvements
-Leetcode-style challenges
-Interactive visualizations
+• <b>LeetCode Challenges:</b> Integration of curated problem sets.
+• <b>Visualizations:</b> Interactive <b>visual tools</b> to see how algorithms work in real-time.
