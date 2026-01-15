@@ -33,3 +33,9 @@ Topics Covered
 • <b>Sorting & Searching:</b> Binary search, QuickSort, MergeSort, etc. 
 
 • <b>Dynamic Programming:</b> Optimization problems and memoization.
+
+Future Improvements 
+
+• <b>LeetCode Challenges:</b> Integration of curated problem sets. 
+
+• <b>Visualizations:</b> Interactive <b>visual tools</b> to see algorithms in real-time.
